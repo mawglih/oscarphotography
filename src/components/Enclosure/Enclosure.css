@@ -1,0 +1,36 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin-top: 5vh;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.listItem {
+  width: 10vw;
+  margin: 10px;
+}
+.listItem > img {
+  width: 100%;
+  display: block;
+  padding: 2px;
+}
+.imageBig {
+  width: 100%;
+}
+
+/* for smaller devices */
+@media only screen and (max-width: 600px) {
+  .liat {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 2vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .listItem {
+    width: 90vw;
+  }
+
+}

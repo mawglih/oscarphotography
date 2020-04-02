@@ -1,0 +1,29 @@
+{
+  "short_name": "Alphamarinepholstery",
+  "name": "Palm Coast Upholstery Shop",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }	    
+  ],
+  "start_url": "/index.html",
+  "scope":".",
+  "display": "standalone",
+  "theme_color": "#383ADE",
+  "background_color": "#87cefa",
+  "description":"Marine Upholstery Shop in Northwen Florida",
+  "dir":"ltr",
+  "lang":"en-US"
+}

@@ -1,0 +1,34 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.contactField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.has-error {
+  border: 1px solid red;
+}
+.text-error {
+  color: red;
+}
+.button {
+  width: 200px;
+  margin: 10px;
+}
+.formTitle {
+  text-align: center;
+  color: #5a3166;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

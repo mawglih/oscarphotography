@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #383ADE;
+  padding: 50px;
+  color: antiquewhite;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.drawer {
+  background-color: #383ADE;
+}
+.isActive {
+  color: #de383a;
+  font-weight: bold;
+}
+/* for smaller devices */
+@media only screen and (max-width: 600px) {
+  .big_screen {
+    display: none;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .mobile_only {
+    display: none;
+  }
+}

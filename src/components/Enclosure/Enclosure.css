@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+}
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -16,21 +21,58 @@
   padding: 2px;
 }
 .imageBig {
-  width: 100%;
+  width: 700px;
+}
+.media {
+  width: 700px;
 }
 
 /* for smaller devices */
 @media only screen and (max-width: 600px) {
-  .liat {
+  .list {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 2vh;
+    margin: 0;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
   }
   .listItem {
-    width: 90vw;
+    width:80vw;
   }
+  .imageBig {
+    width: 100%;
+  }
+  .imageBig > img {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+  .container {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .container>div:first-of-type {
+    margin-bottom: 20px;
+  }
+}
 
+/* for Ipad */
+@media only screen and (max-width: 1100px) {
+  .list {
+    width: 95%;
+  }
+  .listItem {
+    width: 25%;
+  }
+  .imageBig {
+    width: 100%;
+  }
+  .imageBig > img {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
 }

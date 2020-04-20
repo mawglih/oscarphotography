@@ -1,0 +1,144 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  color: black;
+  text-align: center;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.main>div {
+  margin: 10px 100px;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+.button {
+  margin-top: 20px;
+  padding: 20px 0;
+}
+.mobileOnly {
+  display: none;
+}
+.ipadContent {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    display: none;
+  }
+  .ipadContent {
+    display: none;
+  }
+  .mobileOnly {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .mobileOnly>h2 {
+    color: blue;
+    margin-top:40px;
+  }
+  .button {
+    margin-top: 0;
+    padding: 10px 0;
+  }
+  .mobileText {
+    font-size: 110%;
+    padding: 10px;
+    border: blue 1px solid;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+}
+/* for ipad devices */
+@media only screen and (max-width: 768px) {
+  .main, .items {
+    width: 95%;
+    justify-content: stretch;
+  }
+  .main > div {
+    margin: 0;
+  }
+  .card {
+    display: none;
+  }
+  .ipadContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .ipadImage {
+    width: 100%;
+  }
+  .ipadImage >img {
+    width: 100%;
+    max-height: 350px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .items {
+    flex-direction: row;
+    align-items: center;
+  }
+  .items > div:first-of-type {
+    flex-grow: 50%;
+  }
+  .ipadText {
+    padding: 20px;
+    font-size: 105%;
+    margin-bottom: 20px;
+  }
+}
+/* for ipad Pro devices */
+@media only screen and (max-width: 1100px) {
+  .main, .items {
+    width: 95%;
+    justify-content: stretch;
+  }
+  .main > div {
+    margin: 0;
+  }
+  .card {
+    display: none;
+  }
+  .ipadContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .ipadImage {
+    width: 100%;
+  }
+  .ipadImage >img {
+    width: 100%;
+    max-height: 450px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .items {
+    flex-direction: row;
+    align-items: center;
+  }
+  .items > div:first-of-type {
+    flex-grow: 50%;
+  }
+  .ipadText {
+    padding: 20px;
+    font-size: 105%;
+    margin-bottom: 20px;
+  }
+}

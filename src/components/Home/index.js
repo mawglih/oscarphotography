@@ -1,35 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Map from '../Map';
-import Upholstery from '../Upholstery';
 import Image from '../Image';
+import Text from '../../constants';
 import styles from './home.css';
-import Modal from '../Modal';
+
 
 const Home = () => {
   const IMAGES = [
     {
-      image: 'enc_main',
+      image: 'front/enc_main.png',
       title: 'Enclosures',
-      text: 'We fix and build all possible enclosures for boats',
+      text: Text.About2,
       size: 'big',
+      subtext: Text.Short3,
     },
     {
-      image: 'otf_main',
-      title: 'Floor',
-      text: 'We fix and build all possible floors for boats',
+      image: 'front/furn_main.png',
+      title: 'Outdoor furniture',
+      text: Text.About1,
       size: 'big',
+      subtext: Text.Short2,
     },
     {
-      image: 'uph_main',
-      title: 'Upholstery',
-      text: 'We fix and build all possible upholsterys for boats',
+      image: 'front/uph_main.png',
+      title: 'Boat cushions',
+      text: Text.About,
       size: 'big',
+      subtext: Text.Short1,
     },
   ]
   return (
     <>
       <div className={styles.container}>
-        <h1 className={styles.header}>Alphamarineupholstery - your best boat renovation shop</h1>
+        <div className={styles.header}>
+          <h1><span>Alpha Marine Upholstery</span> </h1>
+          <h2>your best boat renovation shop</h2>
+        </div>
         <div className={styles.hero}></div>
         
         <div className={styles.row}>
@@ -41,6 +47,8 @@ const Home = () => {
                 title={item.title}
                 text={item.text}
                 size={item.size}
+                color="black"
+                subText={item.subtext}
               />
             )
           })}
@@ -49,7 +57,7 @@ const Home = () => {
           <div className={styles.map}>
             <Map
               value={17}
-              shop="AlphaMarineUpholstery"
+              shop="Alpha Marine Upholstery"
             />
           </div>
         </div>

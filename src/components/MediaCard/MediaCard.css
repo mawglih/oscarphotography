@@ -1,0 +1,10 @@
+.container {
+  max-width: 385px;
+  height: 450px;
+}
+/* for ipad devices */
+@media only screen and (max-width: 768px) {
+  .container {
+    height: 480px;
+  }
+}

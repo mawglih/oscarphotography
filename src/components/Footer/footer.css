@@ -1,4 +1,9 @@
 .container {
+  background-color: rgb(8, 8, 153);
+  padding: 50px;
+  color: antiquewhite;
+}
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,14 +12,55 @@
   padding: 50px;
   color: antiquewhite;
 }
-
+.content svg {
+  fill: white !important;
+}
+.content span {
+  color: white !important;
+}
+.tabs span{
+  font-size: 1.3rem;
+  color: white !important;
+}
+.mobile {
+  display: none;
+}
 /* for smaller devices */
-@media only screen and (max-width: 600p) {
-  .container {
+@media only screen and (max-width: 600px) {
+  .mobile  {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
+  }
+  .content {
+    display: none !important;
+  }
+  .address {
+    display: flex;
+  }
+  .addressText {
+    margin-left: 20px;
+  }
+  .phoneText {
+    margin-left: 30px;
+  }
+  .mobile a {
+    color: antiquewhite;
+    text-decoration: underline;
+  }
+  .mobile > div {
+    margin-bottom: 10px;
+  }
+}
+
+/* for ipad devices */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .content {
+    padding: 20px;
   }
 }

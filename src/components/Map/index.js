@@ -6,7 +6,7 @@ import styles from './map.css';
 const MyShop = ({ text }) => (
   <div style={{
     color: 'white', 
-    background: 'rgb(8, 8, 153)',
+    background: 'red',
     padding: '25px 15px',
     display: 'inline-flex',
     textAlign: 'center',

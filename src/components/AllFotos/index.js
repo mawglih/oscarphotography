@@ -6,7 +6,7 @@ const AllFotos = ({
   classname2,
   onImageClick,
 }) => {
-  const imagePath = aws.root;
+  const imagePath = `${aws.root}thumbs/`;
   const Images = aws.fotos.map((image, ind) => {
     return (
       <div key={ind} className={classname2} onClick={() => onImageClick(image)}>

@@ -1,0 +1,16 @@
+.imageBig {
+  width: 700px;
+}
+
+/* for smaller devices */
+@media only screen and (max-width: 768px) {
+  .imageBig {
+    width: 100%;
+  }
+  .imageBig > img {
+    padding: 10px;
+    display: block;
+    width: 100%;
+  }
+}
+

@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   background-color: #383ADE;
   padding: 50px;
-  color: antiquewhite;
+  color: white;
 }
 a {
   color: white;
@@ -14,17 +14,49 @@ a {
 .drawer {
   background-color: #383ADE;
 }
+.drawer > div {
+  align-self: flex-start;
+}
 .isActive {
-  color: #de383a;
+  color: red;
+  font-weight: bold;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  background-color: #383ADE;
+
+}
+.logo {
+  flex-basis: 10%;
+}
+.logo img {
+  max-width: 90px;
+  padding-top: 10px;
+}
+.links {
+  flex-grow: 1;
+  align-items:center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.links span {
+  font-size: 110%;
   font-weight: bold;
 }
 /* for smaller devices */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .big_screen {
     display: none;
   }
+  .list {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 769px) {
   .mobile_only {
     display: none;
   }

@@ -2,13 +2,13 @@
   <defs>
     <style>
       .cls-1 {
-        stroke: #fff;
+        stroke: #222;
         stroke-width: 1.5px;
         fill: none;
       }
 
       .cls-2 {
-        fill: #fff;
+        fill: #222;
         fill-rule: evenodd;
       }
     </style>

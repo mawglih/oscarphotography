@@ -1,6 +1,16 @@
 .container {
+  max-width: 500px;
+  height:550px;
+}
+.container p{
+  font-size: 140%;
+}
+.container2 {
   max-width: 385px;
-  height: 450px;
+  height:470px;
+}
+.container2 p{
+  font-size: 120%;
 }
 /* for ipad devices */
 @media only screen and (max-width: 768px) {

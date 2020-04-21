@@ -25,11 +25,12 @@ const MediaCard = ({
   text,
   image,
   open,
+  size,
 }) => {
   const classes = useStyles();
 
   return (
-    <Card className={styles.container}>
+    <Card className={styles[size]}>
       <CardActionArea>
         <CardMedia
           className={classes.media}

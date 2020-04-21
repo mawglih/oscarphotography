@@ -75,7 +75,6 @@ const Image = ({
   useEffect(() =>{
     setOpenModal(false);
   },[]);
-  console.log('modalopen: ', openModal);
   const Content = () => (
     <div className={styles2.content}>
       <div className={styles2.title}>
@@ -86,6 +85,7 @@ const Image = ({
           <MediaCard
             image={image}
             text={text}
+            size="container"
           />
         </div>
         <div className={styles2.ipadContent}>
@@ -115,6 +115,7 @@ const Image = ({
         title={title}
         text={subText}
         open={() => setOpenModal(true)}
+        size="container2"
       />
   
     </div>

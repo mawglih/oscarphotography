@@ -1,23 +1,51 @@
 .container {
   padding: 20px 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 .map {
-  margin-top: 40px;
-  width: 40vw;
-  height: 30vw;
+  margin-bottom: 50px;
+  width: 700px;
+  height: 400px;
 }
 .row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 90%;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+@media only screen and (max-width: 1449px) {
+  .row {
+    align-items: center;
+  }
+  .map {
+    width: 600px;
+  }
+}
+
+/* for ipad devices */
+@media only screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    width: 100%;
+  }
+  .row>div:first-of-type {
+    margin-bottom: 50px;
+  }
+  .map {
+    width: 95%;
+    height: 500px;;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .map {
     margin-top: 20px;
@@ -39,23 +67,5 @@
   }
   .row>div {
     padding-top: 20px;
-  }
-}
-
-/* for ipad devices */
-@media only screen and (max-width: 768px) {
-  .row {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    align-self: center;
-    width: 100%;
-  }
-  .row>div:first-of-type {
-    margin-bottom: 50px;
-  }
-  .map {
-    width: 95%;
-    height: 400px;;
   }
 }

@@ -36,13 +36,16 @@
 }
 .header {
   color: bisque;
-  width: 40vw;
-  padding: 20px;
-  border: black 3px solid;
-  border-radius: 25px;
+  /* width: 40vw; */
+  /* padding: 10px; */
+  /* border: black 3px solid;
+  border-radius: 25px; */
   align-self: center;
-  margin: 25px;
-  background-color: rgb(8, 8, 153);
+  margin: 10px;
+  /* background-color: rgb(8, 8, 153); */
+  font-family: 'Tangerine', cursive;
+  font-size: 300%;
+  color: rgb(8, 8, 153);
 }
 .content {
   display: flex;
@@ -51,6 +54,26 @@
   justify-content: space-around;
 }
 
+
+/* for ipad  Pro devices */
+@media only screen and (max-width: 1100px) {
+  .header {
+    width: 90%;
+    border: none;
+    font-size: 250%;
+  }
+  .map {
+    width: 90%;
+  }
+  .image {
+    width: 100%;
+    padding: 2px;
+    margin: 2px;
+  }
+  .hero {
+    margin-bottom: 20px;
+  }
+}
 /* for smaller devices */
 @media only screen and (max-width: 600px) {
   .row {
@@ -83,24 +106,7 @@
     border: none;
     background: none;
     color: rgb(8, 8, 153);
+    font-size: 200%;
   }
 
-}
-/* for ipad  Pro devices */
-@media only screen and (max-width: 1100px) {
-  .header {
-    width: 90%;
-    border: none;
-  }
-  .map {
-    width: 90%;
-  }
-  .image {
-    width: 100%;
-    padding: 2px;
-    margin: 2px;
-  }
-  .hero {
-    margin-bottom: 20px;
-  }
 }

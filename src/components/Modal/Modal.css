@@ -279,16 +279,20 @@
   border-radius: 15px;
   text-transform: uppercase;
 }
-/* for smaller devices */
-@media only screen and (max-width: 600px) {
+
+
+/* for ipad Pro devices */
+@media only screen and (max-width: 1100px) {
   .big {
-    width: 96%;
+    width: 95%;
+    height: 70%;
   }
   .large {
-    width: 99%;
+    width: 95%;
     height: 50%;
   }
 }
+
 /* for ipad devices */
 @media only screen and (max-width: 768px) {
   .big {
@@ -300,14 +304,13 @@
     height: 70%;
   }
 }
-/* for ipad Pro devices */
-@media only screen and (max-width: 1100px) {
+/* for smaller devices */
+@media only screen and (max-width: 600px) {
   .big {
-    width: 95%;
-    height: 70%;
+    width: 96%;
   }
   .large {
-    width: 95%;
+    width: 99%;
     height: 50%;
   }
 }

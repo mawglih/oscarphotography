@@ -35,25 +35,16 @@ const ContactUs = () => {
   }, [actions]);
   return(
     <div className={styles.container}>
-      {loading ? (
-        <Spinner
-          type="Rings"
-          color="#383ADE"
-          height={100}
-          width={100}
-          timeout={3000}
-      />
-      ) : (
-        <div className={styles.row}>
-           <ContactForm status={setOpenModal} />
-           <Contacts />
+      <div className={styles.row}>
+        <ContactForm status={setOpenModal} />
+      </div>
+      <div className={styles.row}>
+        <Contacts />
+        <div className={styles.map}>
+          <Map value={15} shop="Alpha Marine Upholstery"/>
         </div>
-     
-      )}
+      </div>
       {data && data.userEmail &&  <Status status={data} />}
-      <div className={styles.map}>
-        <Map value={15} shop="Alpha Marine Upholstery"/>
-      </div> 
      <Modal
         title='small'
         text={data ? data.userMessage : ''}

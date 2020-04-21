@@ -4,12 +4,11 @@
   align-items: flex-start;
   justify-content: center;
   padding: 20px;
-  color: blue;
-  background-color: whitesmoke;
-  padding: 50px;
+  color: whitesmoke;
+
 }
 .container>a {
-  color: blue;
+  color: whitesmoke;
   text-decoration: underline;
 }
 .phone>h1 {

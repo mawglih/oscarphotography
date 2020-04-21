@@ -61,7 +61,6 @@ const ContactForm = ({
   const classes = useStyles();
   const submitForm = e => {
     e.preventDefault()
-    console.log('data: ', values);
     actions.sendmessage(values);
     status = true;
     actions.clear();

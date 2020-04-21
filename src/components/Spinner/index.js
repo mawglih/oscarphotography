@@ -9,7 +9,6 @@ const Spinner = ({
   width,
   timeout,
 }) => {
-  console.log('spinner')
   return (
     <Loader
       type={type}

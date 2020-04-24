@@ -3,29 +3,29 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #383ADE;
+  background-color: #222;
   padding: 50px;
-  color: white;
+  color: gold;
 }
 a {
-  color: white;
+  color: gold;
   text-decoration: none;
 }
 .drawer {
-  background-color: #383ADE;
+  background-color: #222;
 }
 .drawer > div {
   align-self: flex-start;
 }
 .isActive {
-  color: red;
+  color: orangered;
   font-weight: bold;
 }
 .list {
   display: flex;
   justify-content: space-between;
   width: 250px;
-  background-color: #383ADE;
+  background-color: #222;
 
 }
 .logo {

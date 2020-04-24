@@ -20,14 +20,14 @@ const useStyles = makeStyles({
   list: {
     display: 'flex',
     width: 250,
-    backgroundColor: '#383ADE',
-    color: 'antiquewhite',
+    backgroundColor: '#222',
+    color: 'goldenrod',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   root: {
     flexGrow: 1,
-    backgroundColor: '#383ADE',
+    backgroundColor: '#222',
     height: 100,
   },
 });
@@ -53,8 +53,7 @@ const Header = () => {
 
   const LINKS = [
     { text:'Home', link: '/' },
-    { text: 'What we do', link: '/about' },
-    { text: 'Contact us', link: '/contact' },
+    { text: 'Work samples', link: '/about' },
   ];
 
   const sideList = side => (

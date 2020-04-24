@@ -33,8 +33,8 @@ const Home = () => {
     <>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1><span>Alpha Marine Upholstery</span> </h1>
-          <h2>your best boat renovation shop</h2>
+          <h1><span>Zolotishko ot Igorka</span> </h1>
+          <h2>the best ***ing jeweler on Diamond street</h2>
         </div>
         <div className={styles.hero}></div>
         

@@ -28,24 +28,24 @@
   width: 50vw;
 }
 .hero {
-  width: 98vw;
-  height: 40vw;
-  background: url("https://amu-images.s3.us-east-2.amazonaws.com/front/boat_1200.png") lightskyblue center no-repeat;
+  width: 100%;
+  height:900px;
+  background: url("http://igor-jeweler.s3-website-us-east-1.amazonaws.com/images/front3.png") black top center no-repeat;
   align-self: center;
   padding: 5px 0;
 }
 .header {
-  color: bisque;
+  color: gold !important;
   /* width: 40vw; */
   /* padding: 10px; */
   /* border: black 3px solid;
   border-radius: 25px; */
   align-self: center;
   margin: 10px;
-  /* background-color: rgb(8, 8, 153); */
+  /* background-color: #444; */
   font-family: 'Tangerine', cursive;
   font-size: 300%;
-  color: rgb(8, 8, 153);
+  color: #444;
 }
 .content {
   display: flex;
@@ -89,7 +89,7 @@
   .image {
     margin: 20px;
     width: 90vw;
-    background-color: lightskyblue;
+    background-color: black;
   }
   .image > img {
     max-height: 90%;
@@ -105,7 +105,7 @@
     width: 90vw;
     border: none;
     background: none;
-    color: rgb(8, 8, 153);
+    color: #444;
     font-size: 200%;
   }
 

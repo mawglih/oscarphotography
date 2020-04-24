@@ -1,26 +1,26 @@
 .container {
-  background-color: rgb(8, 8, 153);
+  background-color: #444;
   padding: 50px;
-  color: antiquewhite;
+  color: gold;
 }
 .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgb(8, 8, 153);
+  background-color: #444;
   padding: 50px;
-  color: antiquewhite;
+  color: gold;
 }
 .content svg {
-  fill: white !important;
+  fill: goldenrod !important;
 }
 .content span {
-  color: white !important;
+  color: goldenrod !important;
 }
 .tabs span{
   font-size: 1.3rem;
-  color: white !important;
+  color: goldenrod !important;
 }
 .mobile {
   display: none;
@@ -47,7 +47,7 @@
     margin-left: 30px;
   }
   .mobile a {
-    color: antiquewhite;
+    color: gold;
     text-decoration: underline;
   }
   .mobile > div {

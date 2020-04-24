@@ -16,8 +16,8 @@ import styles from './footer.css';
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    color: 'white',
-    backgroundColor: 'rgb(8, 8, 153)'
+    color: 'goldenrod',
+    backgroundColor: '#444'
   },
 });
 

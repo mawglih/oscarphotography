@@ -1,32 +1,64 @@
 .container {
   background-color: #444;
-  padding: 50px;
+  padding: 20px;
   color: gold;
 }
 .content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: wrap;
   background-color: #444;
-  padding: 50px;
+  padding: 20px 100px;
   color: gold;
 }
+.address span {
+  font-size: 1.3rem;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.address p {
+  font-size: 1.5rem;
+}
 .content svg {
-  fill: goldenrod !important;
+  fill: gold !important;
 }
 .content span {
-  color: goldenrod !important;
+  color: gold !important;
 }
 .tabs span{
   font-size: 1.3rem;
-  color: goldenrod !important;
+  color: gold !important;
+  
+
 }
 .mobile {
   display: none;
 }
+/* for IPad Pro */
+@media only screen and (max-width: 1200px) {
+  .content {
+    justify-content: space-between;
+    padding: 10px 5px;
+  }
+  .container {
+    padding: 5px;
+  }
+}
+/* for below 955px */
+@media only screen and (max-width: 955px) {
+  .address p {
+    font-size: 1rem;
+  }
+  .tabs span{
+    font-size: 1rem;
+  }
+  .content {
+    justify-content: space-around;
+    padding: 10px 20px;
+  }
+}
 /* for smaller devices */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .mobile  {
     display: flex;
     flex-direction: column;
@@ -53,14 +85,9 @@
   .mobile > div {
     margin-bottom: 10px;
   }
+  .address span, p {
+    font-size: 1rem !important;
+    font-family: 'Chivo';
+  }
 }
 
-/* for ipad devices */
-@media only screen and (max-width: 768px) {
-  .container {
-    padding: 20px;
-  }
-  .content {
-    padding: 20px;
-  }
-}

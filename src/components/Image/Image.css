@@ -8,22 +8,31 @@
 .title {
   color: black;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 105%;
 }
 .main {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 }
 .main>div {
-  margin: 10px 100px;
+  margin: 10px 50px;
 }
 .items {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  align-content: center;
   justify-content: space-between;
+  height: 100%;
+}
+.items > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .button {
   margin-top: 20px;
@@ -35,33 +44,43 @@
 .ipadContent {
   display: none;
 }
-@media only screen and (max-width: 600px) {
-  .content {
+/* for ipad Pro devices */
+@media only screen and (max-width: 1100px) {
+  .main, .items {
+    width: 95%;
+    justify-content: stretch;
+  }
+  .main > div {
+    margin: 0;
+  }
+  .card {
     display: none;
   }
   .ipadContent {
-    display: none;
-  }
-  .mobileOnly {
     display: flex;
     flex-direction: column;
+  }
+  .ipadImage {
+    width: 100%;
+  }
+  .ipadImage >img {
+    width: 100%;
+    max-height: 450px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .items {
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
   }
-  .mobileOnly>h2 {
-    color: blue;
-    margin-top:40px;
+  .items > div:first-of-type {
+    flex-grow: 50%;
   }
-  .button {
-    margin-top: 0;
-    padding: 10px 0;
-  }
-  .mobileText {
-    font-size: 110%;
-    padding: 10px;
-    border: blue 1px solid;
-    border-radius: 20px;
-    margin-top: 20px;
+  .ipadText {
+    padding: 20px;
+    font-size: 105%;
+    margin-bottom: 20px;
   }
 }
 /* for ipad devices */
@@ -103,42 +122,34 @@
     margin-bottom: 20px;
   }
 }
-/* for ipad Pro devices */
-@media only screen and (max-width: 1100px) {
-  .main, .items {
-    width: 95%;
-    justify-content: stretch;
-  }
-  .main > div {
-    margin: 0;
-  }
-  .card {
+/* for smaller devices */
+@media only screen and (max-width: 600px) {
+  .content {
     display: none;
   }
   .ipadContent {
+    display: none;
+  }
+  .mobileOnly {
     display: flex;
     flex-direction: column;
-  }
-  .ipadImage {
-    width: 100%;
-  }
-  .ipadImage >img {
-    width: 100%;
-    max-height: 450px;
-  }
-  .main {
-    flex-direction: column;
-  }
-  .items {
-    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
   }
-  .items > div:first-of-type {
-    flex-grow: 50%;
+  .mobileOnly>h2 {
+    color: blue;
+    margin-top:40px;
   }
-  .ipadText {
-    padding: 20px;
-    font-size: 105%;
-    margin-bottom: 20px;
+  .button {
+    margin-top: 0;
+    padding: 10px 0;
+  }
+  .mobileText {
+    font-size: 120%;
+    padding: 10px;
+    border: blue 1px solid;
+    border-radius: 20px;
+    margin-top: 20px;
   }
 }
+

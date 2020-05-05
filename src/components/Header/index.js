@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { withRouter, NavLink, Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
 import {
   Drawer,
   Button,
@@ -8,52 +7,26 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  Paper,
-  Tabs,
-  Tab,
 } from '@material-ui/core/';
-import ReorderIcon from '@material-ui/icons/Reorder';
+import ReorderIcon from '@material-ui/icons/ReorderOutlined';
 import aws from '../../constants';
 import styles from './header.css';
 
-const useStyles = makeStyles({
-  list: {
-    display: 'flex',
-    width: 250,
-    backgroundColor: '#222',
-    color: 'goldenrod',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  root: {
-    flexGrow: 1,
-    backgroundColor: '#222',
-    height: 100,
-  },
-});
-
-const Logo = `${aws.root}logo2.png`
+const Logo = 'https://igor-jeweler.s3.amazonaws.com/images/logo_i.png';
 
 const Header = () => {
-  const classes = useStyles();
   const [state, setState] = useState(false);
-  const [value, setValue] = useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   const toggleDrawer = (side, open) => event => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
-
     setState({ ...state, [side]: open });
   };
 
   const LINKS = [
     { text:'Home', link: '/' },
-    { text: 'Work samples', link: '/about' },
+    // { text: 'Work samples', link: '/about' },
+    { text: 'Contact Us', link: './contact'},
   ];
 
   const sideList = side => (
@@ -79,37 +52,37 @@ const Header = () => {
       </List>
     </div>
   );
-
-
+  
   return (
     <>
       <div className={styles.big_screen}>
-      <Paper className={classes.root}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-        >
-          <div className={styles.logo}>
-            <NavLink exact activeClassName={styles.isActive} to='/'>
-                <img src={Logo} alt="logo"/>
+        <div className={styles.logo}>
+          <NavLink exact activeClassName={styles.isActive} to='/'>
+              <img src={Logo} alt="logo"/>
+          </NavLink>
+        </div>
+        <div className={styles.links}>
+          {LINKS.map(({ text, link }) => (
+            <NavLink exact activeClassName={styles.isActive} to={link} key={text}>
+              <div>
+                <span>{text}</span>
+              </div>
             </NavLink>
-          </div>
-          <div className={styles.links}>
-            {LINKS.map(({ text, link }) => (
-              <NavLink exact activeClassName={styles.isActive} to={link} key={text}>
-                <Tab 
-                  label={text} href={link} component={'span'}
-                />
-              </NavLink>
-            ))}
-          </div>
-        </Tabs>
-      </Paper>
+          ))}
+        </div>
+        <div className={styles.address}>
+          <h3>Hawthorne Jewelry</h3>
+          <p>Email: <a href={aws.Email}>{aws.Email2}</a></p>
+          <a href={aws.PhoneNumber}><h4>{aws.Phone}</h4></a>
+          <p><small>{aws.Address1}</small></p>
+          <p><small>{aws.Address2}</small></p>
+       </div>
       </div>
       <div className={styles.mobile_only}>
       <Button onClick={toggleDrawer('left', true)}>
-        <ReorderIcon fontSize="large"/>
+        <div className={styles.hamburger}>
+          <ReorderIcon fontSize="large"/>
+        </div>
       </Button>
       <Drawer open={state.left} onClose={toggleDrawer('left', false)}>
         {sideList('left')}

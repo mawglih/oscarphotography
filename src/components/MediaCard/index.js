@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import cn from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -26,6 +27,8 @@ const MediaCard = ({
   image,
   open,
   size,
+  list,
+  bold,
 }) => {
   const classes = useStyles();
 
@@ -38,11 +41,16 @@ const MediaCard = ({
           title={title}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h5">
+          <Typography gutterBottom variant="h5" component="h4">
             {title}
           </Typography>
           <Typography variant="span" color="textSecondary" component="p">
-            {text}
+            <span className={cn( bold ? styles.bold : null)}>{text}</span>
+            {list && (<ul className={styles.list}>
+              {list.map((i, ind)=> (
+                <li key={ind}>{i}</li>
+              ))}
+            </ul>)}
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -1,0 +1,108 @@
+.container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reverse {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.column {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+}
+/* .image {
+  width: 60%;
+  
+} */
+.reverse .image {
+  margin-right: 200px;
+  flex-basis: 50%;
+}
+.image >img {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.column > p {
+  width: 50%;
+}
+.title>h1{
+  display: inline;
+  padding-left: 10px;
+}
+
+/* for ipad  Pro devices */
+@media only screen and (max-width: 1450px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .reverse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .column {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    padding: 50px 20px;
+    margin-top: 0;
+  }
+  .reverse .image {
+    margin-right: 0;
+    flex-basis: 100%;
+  }
+  .image >img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .column  p, span {
+    width: 100%;
+    font-size: 150%;
+  }
+  .column  h1 {
+    font-size: 3rem;
+  }
+  .title {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .column  p, span {
+    width: 100%;
+    font-size: 120%;
+  }
+  .column  h1 {
+    font-size: 1.5rem;
+  }
+  .image >img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .column {
+    padding: 10px;
+  }
+  .title {
+    display: none;
+  }
+}

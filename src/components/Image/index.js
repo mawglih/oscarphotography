@@ -3,7 +3,6 @@ import Modal from '../Modal';
 import CardAvatar from '../CardAvatar';
 import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
 import PhoneInTalkOutlinedIcon from '@material-ui/icons/PhoneInTalkOutlined';
-import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
 import MediaCard from '../MediaCard';
 import Button from '@material-ui/core/Button';
 import ImageAvatar from '../Avatar';
@@ -11,20 +10,10 @@ import aws from '../../constants';
 import styles from '../Home/home.css';
 import styles2 from './Image.css';
 
-const avatar = `${aws.root}taran_avatar2.png`;
-const moto = "Quality is the best policy";
+const avatar = `${aws.root}thumbs/small-magaz.png`;
+const moto = "when only the best will do";
 const AllButtons = () => (
   <>
-    <div className={styles2.button}>
-      <Button 
-        size="big"
-        color="tertiary"
-        href="/contact"
-        startIcon={<ListAltOutlinedIcon size="big" color="tertiary" />}
-      >
-        Fill out form
-      </Button>
-    </div>
     <div className={styles2.button}>
       <Button 
         size="big"
@@ -70,6 +59,9 @@ const Image = ({
   size,
   subText,
   color,
+  list,
+  bold,
+  container,
 }) => {
   const [openModal, setOpenModal] = useState(false);
   useEffect(() =>{
@@ -85,7 +77,9 @@ const Image = ({
           <MediaCard
             image={image}
             text={text}
-            size="container"
+            size={container}
+            list={list}
+            bold={bold}
           />
         </div>
         <div className={styles2.ipadContent}>
@@ -115,7 +109,7 @@ const Image = ({
         title={title}
         text={subText}
         open={() => setOpenModal(true)}
-        size="container2"
+        size={container}
       />
   
     </div>

@@ -1,0 +1,42 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  flex-basis: 40%;
+  color: gold;
+
+}
+.column>a {
+  color: gold;
+  text-decoration: underline;
+}
+.phone>h1 {
+  color: darkblue;
+}
+.column>h3 {
+ padding-left: 20px;
+}
+.first {
+  margin-top: -10px;
+}
+.second {
+  margin-top: -16px;
+}
+@media only screen and (max-width: 1450px) {
+  .column h2 {
+    font-size: 3rem;
+  }
+  .column h3 {
+    font-size: 150%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .column h2 {
+    font-size: 1rem;
+  }
+  .column h3 {
+    font-size: 100%;
+  }
+}

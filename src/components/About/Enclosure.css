@@ -27,6 +27,25 @@
   width: 700px;
 }
 
+
+
+/* for Ipad */
+@media only screen and (max-width: 1100px) {
+  .list {
+    width: 95%;
+  }
+  .listItem {
+    width: 25%;
+  }
+  .imageBig {
+    width: 100%;
+  }
+  .imageBig > img {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+}
 /* for smaller devices */
 @media only screen and (max-width: 600px) {
   .list {
@@ -56,23 +75,5 @@
   }
   .container>div:first-of-type {
     margin-bottom: 20px;
-  }
-}
-
-/* for Ipad */
-@media only screen and (max-width: 1100px) {
-  .list {
-    width: 95%;
-  }
-  .listItem {
-    width: 25%;
-  }
-  .imageBig {
-    width: 100%;
-  }
-  .imageBig > img {
-    padding: 0;
-    display: block;
-    width: 100%;
   }
 }

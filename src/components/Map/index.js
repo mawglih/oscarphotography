@@ -31,7 +31,7 @@ const Map = ({ value, shop }) => {
   return (
     <div className={styles.container}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyC6Afdu1uPHb71fqbGMGX_OH9Oac_q_Vkk' }}
+        bootstrapURLKeys={{ key: '' }}
         defaultCenter={defaultPosition.center}
         defaultZoom={defaultPosition.zoom}
         yesIWantToUseGoogleMapApiInternals

@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #222;
+  background-color: #444;
   padding: 50px;
   color: gold;
 }
@@ -18,7 +18,7 @@ a {
   align-self: flex-start;
 }
 .isActive {
-  color: orangered;
+  color: greenyellow;
   font-weight: bold;
 }
 .list {
@@ -32,8 +32,10 @@ a {
   flex-basis: 10%;
 }
 .logo img {
-  max-width: 90px;
+  max-width: 150px;
   padding-top: 10px;
+  display: block;
+  margin: 30px auto;
 }
 .links {
   flex-grow: 1;
@@ -42,8 +44,24 @@ a {
   justify-content: space-evenly;
 }
 .links span {
-  font-size: 110%;
   font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.hamburger {
+  margin-top: 15px;
+  color: gold;
+}
+.address {
+  padding-top: 10px;
+  flex-basis: 20%;
+  color:gold;
+  align-self: center;
+}
+.big_screen {
+  display: flex;
+  flex-direction: row;
+  background-color: #444;
 }
 /* for smaller devices */
 @media only screen and (max-width: 768px) {

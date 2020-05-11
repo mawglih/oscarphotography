@@ -48,7 +48,9 @@ const MediaCard = ({
             <span className={cn( bold ? styles.bold : null)}>{text}</span>
             {list && (<ul className={styles.list}>
               {list.map((i, ind)=> (
-                <li key={ind}>{i}</li>
+                <li key={ind} className={cn( bold ? styles.bold : null)}>
+                  {i}
+                </li>
               ))}
             </ul>)}
           </Typography>

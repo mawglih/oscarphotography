@@ -62,6 +62,7 @@ const Image = ({
   list,
   bold,
   container,
+  container2,
 }) => {
   const [openModal, setOpenModal] = useState(false);
   useEffect(() =>{
@@ -109,7 +110,7 @@ const Image = ({
         title={title}
         text={subText}
         open={() => setOpenModal(true)}
-        size={container}
+        size={container2}
       />
   
     </div>

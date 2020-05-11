@@ -75,7 +75,7 @@
     margin: 0 auto;
     max-width: 100%;
   }
-  .column  p, span {
+  .column  p, .column span {
     width: 100%;
     font-size: 150%;
   }

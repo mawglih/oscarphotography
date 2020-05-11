@@ -13,7 +13,8 @@ const Home = () => {
       subtext: Text.Buy1short,
       list: Text.Buy2,
       size:"big",
-      container:"container2",
+      container:"container",
+      container2:"container2",
     },
     {
       image: 'Full/foto6.png',
@@ -22,7 +23,8 @@ const Home = () => {
       subtext: Text.Short2,
       list: Text.Repairs1,
       size:"big",
-      container: "container3",
+      container: "container5",
+      container2:"container4"
     },
     {
       image: 'Full/tov2.png',
@@ -31,7 +33,8 @@ const Home = () => {
       subtext: Text.Short1,
       list: Text.Battery1,
       size:"big",
-      container: "container4",
+      container: "container",
+      container2:"container2"
     },
   ]
   return (
@@ -58,6 +61,7 @@ const Home = () => {
                 list={item.list}
                 bold
                 container={item.container}
+                container2={item.container2}
               />
             )
           })}

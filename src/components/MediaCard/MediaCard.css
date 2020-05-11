@@ -2,12 +2,13 @@
   max-width: 500px;
   height:550px;
 }
-.container p{
-  font-size: 120%;
-}
 .container3 {
   max-width: 385px;
   height:470px;
+}
+.container5 {
+  height: 600px;
+  max-width: 500px;
 }
 .container3 p{
   font-size: 110%;
@@ -16,7 +17,7 @@
   max-width: 385px;
   height:470px;
 }
-.container2 p .container4 p{
+.container p, .container2 p, .container4 p, .container5 p{
   font-size: 120%;
 }
 .list {
@@ -36,9 +37,9 @@
     height: 520px;
   }
   .container4 {
-    height: 490px;
+    height: 550px;
   }
-  .container2 span, .container3 span , .container4 span {
-    font-size: 1rem;
+  .container2 span, .container3 span , .container4 span .container5 span {
+    font-size: 120%;
   }
 }

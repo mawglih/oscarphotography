@@ -12,7 +12,7 @@ import ReorderIcon from '@material-ui/icons/ReorderOutlined';
 import aws from '../../constants';
 import styles from './header.css';
 
-const Logo = 'https://igor-jeweler.s3.amazonaws.com/images/logo_i.png';
+const Logo = `${aws.root}front/oscar.png`;
 
 const Header = () => {
   const [state, setState] = useState(false);
@@ -24,9 +24,14 @@ const Header = () => {
   };
 
   const LINKS = [
-    { text:'Home', link: '/' },
-    // { text: 'Work samples', link: '/about' },
-    { text: 'Contact Us', link: './contact'},
+    { text:'Newborns', link: '/newborns' },
+    { text:'Babies', link: '/babies' },
+    { text:'Kids', link: '/kids' },
+    { text:'Cake Smash', link: '/snmash' },
+    { text:'Family', link: '/family' },
+    { text:'Reviews', link: '/reviews' },
+    { text:'Prices', link: '/prices' },
+    { text: 'Contact', link: './contact'},
   ];
 
   const sideList = side => (
@@ -71,11 +76,8 @@ const Header = () => {
           ))}
         </div>
         <div className={styles.address}>
-          <h3>Hawthorne Jewelry</h3>
-          <p>Email: <a href={aws.Email}>{aws.Email2}</a></p>
-          <a href={aws.PhoneNumber}><h4>{aws.Phone}</h4></a>
-          <p><small>{aws.Address1}</small></p>
-          <p><small>{aws.Address2}</small></p>
+          <h3>Oscar Photograhy: Newborn, Baby, Maternity Photography</h3>
+          
        </div>
       </div>
       <div className={styles.mobile_only}>

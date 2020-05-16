@@ -1,15 +1,15 @@
 {
-  "short_name": "Hawthorne Jewelry",
-  "name": "Jewelry",
+  "short_name": "Oscar Photography",
+  "name": "Photography",
   "icons": [
     {"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
   ],
   "start_url": "/index.html",
   "scope":".",
   "display": "standalone",
-  "theme_color": "#383ADE",
-  "background_color": "#87cefa",
-  "description":"Jewelry store and repair in Hawthorne New Jersey",
+  "theme_color": "#e1c2b0",
+  "background_color": "#e7e5d9",
+  "description":"Oscar Photography Studio in Canada",
   "dir":"ltr",
   "lang":"en-US"
 }

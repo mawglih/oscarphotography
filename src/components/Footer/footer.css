@@ -1,36 +1,23 @@
 .container {
-  background-color: #444;
+  background-color: #e7e5d9;
   padding: 20px;
-  color: gold;
+  color: #e1c2b0;
 }
 .content {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-color: #444;
+  background-color: #e7e5d9;
   padding: 20px 100px;
-  color: gold;
+  color: #e1c2b0;
 }
-.address span {
-  font-size: 1.3rem;
-  font-family: 'Gloria Hallelujah', cursive;
+.address a {
+  color: #e1c2b0;
+  text-decoration: none;
+  font-weight: 700;
 }
-.address p {
-  font-size: 1.5rem;
-}
-.content svg {
-  fill: gold !important;
-}
-.content span {
-  color: gold !important;
-}
-.tabs span{
-  font-size: 1.3rem;
-  color: gold !important;
-  
 
-}
 .mobile {
   display: none;
 }
@@ -79,7 +66,7 @@
     margin-left: 30px;
   }
   .mobile a {
-    color: gold;
+    color: #e1c2b0;
     text-decoration: underline;
   }
   .mobile > div {

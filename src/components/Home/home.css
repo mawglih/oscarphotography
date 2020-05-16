@@ -17,10 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: gold 2px solid;
   border-radius: 10px;
-  background-color: gray;
-
 }
 .image  img {
   width: 95%;;
@@ -34,12 +31,7 @@
 }
 /* front3.png */
 .hero {
-  width: 100%;
-  height:900px;
-  background: url("http://igor-jeweler.s3-website-us-east-1.amazonaws.com/images/Full/gold3.png") black top center no-repeat;
-  align-self: center;
-  padding: 5px 0;
-  margin-top: 30px;
+
 }
 .header {
   /* color: gold !important; */
@@ -49,9 +41,8 @@
   align-self: center;
   margin-top: 50px;
   /* background-color: #444; */
-  font-family: 'Parisienne', cursive;
-  font-size: 200%;
-  color: gold;
+  background-color: #e7e5d9;
+  color:#c3c1ac;
 
 }
 .content {
@@ -60,12 +51,7 @@
   align-items: center;
   justify-content: space-around;
 }
-.gold {
-  font-family: 'Lobster', cursive;
-  border: 4px solid gold;
-  padding: 20px;
-  border-radius: 10px;
-}
+
 
 /* for ipad  Pro devices */
 @media only screen and (max-width: 1200px) {

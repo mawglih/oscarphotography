@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../Image';
+import Images from '../Images';
 import Text from '../../constants';
 import styles from './home.css';
 
@@ -41,31 +41,12 @@ const Home = () => {
     <>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1><span>Hawthorne Jewelry</span> </h1>
-          <h2>when only the best will do</h2>
-          <h1 className={styles.gold}>WE BUY GOLD!</h1>
+          <h1><span>Oscar Photography</span> </h1>
+          <h2>always for your service</h2>
         </div>
         <div className={styles.hero}></div>
         
-        <div className={styles.row}>
-          {IMAGES.map((item, index) => {
-            return (
-              <Image
-                key={index}
-                image={item.image}
-                title={item.title}
-                text={item.text}
-                size={item.size}
-                color="black"
-                subText={item.subtext}
-                list={item.list}
-                bold
-                container={item.container}
-                container2={item.container2}
-              />
-            )
-          })}
-        </div>
+        <Images/>
       </div>
     </>
   );

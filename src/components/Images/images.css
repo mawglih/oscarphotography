@@ -1,0 +1,17 @@
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.image {
+  max-width: 600px;
+  padding: 20px;
+}
+.image > img {
+  width: 100%;
+}

@@ -13,6 +13,7 @@ import aws from '../../constants';
 import styles from './header.css';
 
 const Logo = `${aws.root}front/oscar.png`;
+const Star =  `${aws.root}front/star1.png`;
 
 const Header = () => {
   const [state, setState] = useState(false);
@@ -24,11 +25,7 @@ const Header = () => {
   };
 
   const LINKS = [
-    { text:'Newborns', link: '/newborns' },
-    { text:'Babies', link: '/babies' },
-    { text:'Kids', link: '/kids' },
-    { text:'Cake Smash', link: '/snmash' },
-    { text:'Family', link: '/family' },
+    { text:'Gallery', link: '/' },
     { text:'Reviews', link: '/reviews' },
     { text:'Prices', link: '/prices' },
     { text: 'Contact', link: './contact'},
@@ -76,8 +73,9 @@ const Header = () => {
           ))}
         </div>
         <div className={styles.address}>
-          <h3>Oscar Photograhy: Newborn, Baby, Maternity Photography</h3>
-          
+          <img src={Star} alt="star"/>
+          <h1>Your Baby deserves an Oscar</h1>
+          <img src={Star} alt="star"/>
        </div>
       </div>
       <div className={styles.mobile_only}>

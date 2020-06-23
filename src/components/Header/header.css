@@ -21,6 +21,15 @@
 .logo {
   margin: 50px;
 }
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.address img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 /* for smaller devices */
 @media only screen and (max-width: 768px) {
   .big_screen {

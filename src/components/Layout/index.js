@@ -9,7 +9,6 @@ const index = ({
     <Fragment>
       <Header />
         {children}
-      <Footer />
     </Fragment>
   )
 }

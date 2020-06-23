@@ -3,11 +3,10 @@ import styles from './singleimage.css';
 
 const SingleImage = ({
   url,
-  key,
   name,
 }) => {
   return (
-    <div className={styles.image} key={key}>
+    <div className={styles.image}>
       <img src={`${url}/${name}`} alt={name} />
     </div>
   )

@@ -43,7 +43,10 @@
   /* background-color: #444; */
   background-color: #e7e5d9;
   color:#c3c1ac;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
 }
 .content {
   display: flex;
